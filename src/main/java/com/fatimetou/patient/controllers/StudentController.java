@@ -19,7 +19,7 @@ public class StudentController {
     }
 
     @PostMapping
-    public StudentDto addNew(Student student){
+    public StudentDto addNew(@RequestBody Student student){
         return studentService.saveStudent(student);
     }
 }
